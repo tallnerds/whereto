@@ -1,0 +1,10 @@
+[package]
+name = "whereto"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+futures = "0.3"
+reqwest = "0.11"
+structopt = "0.3"
+tokio = "1"
