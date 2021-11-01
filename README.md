@@ -1,5 +1,7 @@
 # Whereto
 
+[![CI](https://github.com/tallnerds/whereto/actions/workflows/ci.yml/badge.svg)](https://github.com/tallnerds/whereto/actions/workflows/ci.yml)
+
 > Where does this url eventually lead to?
 
 A simple CLI utility for tracking down a final redirect location given a URL (or list of URLs).
