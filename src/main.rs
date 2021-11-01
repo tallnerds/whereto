@@ -15,7 +15,7 @@ mod http;
 
 #[derive(StructOpt, Debug)]
 enum OutputFormat {
-    JSON,
+    Json,
     Text,
 }
 
@@ -24,7 +24,7 @@ impl FromStr for OutputFormat {
 
     fn from_str(s: &str) -> Result<Self, Self::Err> {
         match s {
-            "json" => Ok(OutputFormat::JSON),
+            "json" => Ok(OutputFormat::Json),
             "text" => Ok(OutputFormat::Text),
             _ => Err(Self::Err::argument_not_found_auto(s)),
         }
@@ -63,7 +63,7 @@ fn main() {
 
     if let Ok(urls) = results {
         let output = match opts.output {
-            OutputFormat::JSON => {
+            OutputFormat::Json => {
                 let urls = urls
                     .iter()
                     .map(|(src, dest)| {
