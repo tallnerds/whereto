@@ -10,7 +10,7 @@ A simple CLI utility for tracking down a final redirect location given a URL (or
 
 Whereto can be installed with [homebrew](https://brew.sh/).
 
-- `brew tap tallnerds/whereto`
+- `brew tap tallnerds/tools`
 - `brew install whereto`
 
 ## Usage
